@@ -1,12 +1,9 @@
 """
 AMGD package setup script.
 """
-
 from setuptools import setup, find_packages
-
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
-
 setup(
     name="amgd",
     version="0.1.0",
@@ -15,7 +12,7 @@ setup(
     description="Adaptive Momentum Gradient Descent (AMGD) for Penalized Poisson Regression",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/elbakari01/amgd-Poisson-regression",
+    url="https://github.com/elbakari01/amgd_package",  # Updated to your actual repository URL
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -34,4 +31,4 @@ setup(
         "pandas>=1.0.0",
         "seaborn>=0.10.0",
     ],
-)
+)  # Only one closing parenthesis here
